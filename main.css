@@ -1,0 +1,14 @@
+i.material-icons{
+    width: 1em;
+    font-size: 1.2em;
+}
+
+.card-panel,
+.rating-stars i.material-icons {
+    cursor: pointer;
+}
+
+#all-songs {
+    padding-top: 15px;
+    padding-bottom: 5px;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flask Song Api</title>
+
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="nav-wrapper container">
+                <a href="#!" class="brand-logo">Flask Api</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 center">
+                    <h1>Flask Api</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="search">
+        <div class="container">
+            <div class="row">
+                <div class="col offset-s2 s6">
+                    <div class="input-field col s8">
+                        <input type="text" name="search"> 
+                    </div>
+                    <div class="input-field col s4">
+                         <button class="btn search-song waves-effect">Search</button>
+                    </div>
+                </div>
+                <div class="col s3">
+                    <div class="input-field col s8">
+                        <input type="text" name="level"> 
+                    </div>
+                    <div class="input-field col s4">
+                         <button class="btn song-level waves-effect">Level</button>
+                    </div>
+                </div>
+                <div class="col s12 center song-list">
+                    <!-- Display songs -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="all-songs" class="grey lighten-2">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 center">
+                    <button class="btn show-songs waves-effect">All Songs</button>
+                </div>
+                <div class="col s12 all-songs">
+                    <!-- Display all songs -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 center pagination-col">
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+        <h4>Rating</h4>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 center rating-row">
+                   
+                </div>
+                <div class="col s12 center">
+                    <div class="row">
+                        <div class="col s4">Rate it:</div>
+                        <div class="col s4 rating-stars">
+                            <i class="material-icons grey-text" data-index="1">star_rate</i>
+                            <i class="material-icons grey-text" data-index="2">star_rate</i>
+                            <i class="material-icons grey-text" data-index="3">star_rate</i>
+                            <i class="material-icons grey-text" data-index="4">star_rate</i>
+                            <i class="material-icons grey-text" data-index="5">star_rate</i>
+                        </div>
+                        <div class="col s4">
+                            <button class="btn" id="rate_it_button">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
